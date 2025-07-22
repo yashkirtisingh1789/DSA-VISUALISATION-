@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Visualisation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DSA Visualisation</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <label for="algorithm">Choose Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="heap">Heap Sort</option>
+                <option value="bfs">Breadth-First Search (BFS)</option>
+                <option value="dfs">Depth-First Search (DFS)</option>
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+            </select>
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            <label for="speed">Speed:</label>
+            <input type="range" id="speed" min="1" max="100" value="50">
+        </section>
+        <section id="visualization" class="visualization"></section>
+        <section id="graph-section" style="display:none;">
+            <h2 id="graph-heading"></h2>
+            <div id="graph-desc" style="margin-bottom:1rem;color:#444;"></div>
+            <section id="graph-area" class="graph-area"></section>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html> 
